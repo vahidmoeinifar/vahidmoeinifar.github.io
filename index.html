@@ -2,10 +2,18 @@
 <html>
 <head>
     <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Hello World! 🌍</h1>
     <p>My first website with GitHub Pages</p>
+    <p>Current time: <span id="time"></span></p>
+    
+    <script>
+        // Simple script to test JavaScript
+        document.getElementById('time').textContent = new Date().toLocaleTimeString();
+    </script>
 </body>
 </html>
