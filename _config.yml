@@ -28,7 +28,7 @@ nav_links:
     url: "phd.html"
     icon: "fas fa-graduation-cap"
   - title: "My Books"
-    url: "books.html"
+    url: "my-books.html"
     icon: "fas fa-book"
   - title: "Contact"
     url: "#contact"
