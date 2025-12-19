@@ -41,7 +41,11 @@ nav_links:
   - title: "Contact"
     url: "#contact"
     icon: "fas fa-envelope"
-
+  - title: "Fork This Site"
+    url: "https://github.com/vahidmoeinifar/vahidmoeinifar.github.io"
+    icon: "fas fa-code-branch"
+    external: true
+    class: "fork-link"
 # Build settings
 markdown: kramdown
 plugins:
