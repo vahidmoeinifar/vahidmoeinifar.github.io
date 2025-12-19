@@ -7,8 +7,16 @@ description: "Qt QML Developer | .NET Developer | PhD Candidate at AGH Universit
 baseurl: "" # Leave empty for username.github.io
 url: "https://vahidmoeinifar.github.io"
 
-# Your GitHub username
-github_username: "vahidmoeinifar"
+# Author
+author:
+  name: "Vahid Moeinifar"
+  email: "vahidmoeini1988@gmail.com"
+  
+# Social
+github_username: vahidmoeinifar
+linkedin_username: vahid-moeinifar-63219245
+
+
 
 # Navigation links - FIXED URLs (no trailing slashes)
 nav_links:
@@ -36,6 +44,9 @@ nav_links:
 
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 theme: null
 
 # Exclude from processing

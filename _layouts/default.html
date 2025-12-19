@@ -2,10 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- CRITICAL: Add proper viewport meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Full-Stack & Qt/QML Software Engineer, PhD researcher, and published author. Specializing in modern web development and desktop applications.{% endif %}">
+    <meta name="keywords" content="Vahid Moeinifar, software engineer, full-stack developer, Qt/QML, C++, .NET, React, PhD researcher, computer science">
+    <meta name="author" content="Vahid Moeinifar">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | Vahid Moeinifar{% else %}Vahid Moeinifar - Full-Stack & Qt/QML Developer{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Full-Stack & Qt/QML Software Engineer, PhD researcher, and published author.{% endif %}">
+    <meta property="og:image" content="{{ site.url }}/assets/images/og-image.jpg">
+     <!-- Additional SEO -->
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <title>{{ page.title }} | {{ site.title }}</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon/favicon.ico' | relative_url }}">
     
     <!-- CSS & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

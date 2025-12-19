@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vahidmoeinifar.github.io/sitemap.xml

@@ -1,7 +1,52 @@
 ---
 layout: default
 title: My Books
+description: "Published books by Vahid Moeinifar: BAO (Persian novel), Narration of My Life, and Qashqai Turkish Grammar (linguistics). ISBN information available."
+keywords: "Persian literature, Qashqai Turkish, linguistics, published author, novels, grammar book, ISBN 978-622-6849-00-5"
+og_image: "/assets/images/profile2.png"
+head: |
+    <!-- Schema.org markup for Book -->
+    <script type="application/ld+json">
+    [{
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "BAO",
+        "author": {
+            "@type": "Person",
+            "name": "Vahid Moeinifar"
+        },
+        "isbn": "978-622-6849-00-5",
+        "inLanguage": "Persian",
+        "genre": "Fiction"
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Narration of My Life",
+        "author": {
+            "@type": "Person",
+            "name": "Vahid Moeinifar"
+        },
+        "isbn": "978-622-6849-26-5",
+        "inLanguage": "Persian",
+        "genre": "Fiction"
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Qashqai Turkish Grammar",
+        "author": {
+            "@type": "Person",
+            "name": "Vahid Moeinifar"
+        },
+        "isbn": "978-622-6849-01-2",
+        "inLanguage": ["Qashqai Turkish", "English"],
+        "genre": "Linguistics, Academic"
+    }]
+    </script>
 ---
+
+<!-- Your existing content -->
 
 <link rel="stylesheet" href="{{ '/books.css' | relative_url }}">
 
