@@ -4,34 +4,34 @@
 title: "Vahid Moeinifar - Personal Website"
 email: "vahidmoeini1988@gmail.com"
 description: "Qt QML Developer | .NET Developer | PhD Candidate at AGH University"
-baseurl: "" # Leave empty if your site is at username.github.io
-url: "https://vahidmoeinifar.github.io" # Replace with your actual GitHub URL
+baseurl: "" # Leave empty for username.github.io
+url: "https://vahidmoeinifar.github.io"
 
 # Your GitHub username
 github_username: "vahidmoeinifar"
 
-# Navigation links
+# Navigation links - FIXED URLs (no trailing slashes)
 nav_links:
   - title: "Home"
     url: "/"
     icon: "fas fa-home"
   - title: "About"
-    url: "/#about"
+    url: "#about"
     icon: "fas fa-user"
   - title: "Projects"
-    url: "/#projects"
+    url: "#projects"
     icon: "fas fa-code"
   - title: "Resume"
-    url: "/#cv"
+    url: "#cv"
     icon: "fas fa-file-alt"
   - title: "PhD Studies"
-    url: "/phd.html/"
+    url: "phd.html"
     icon: "fas fa-graduation-cap"
   - title: "My Books"
-    url: "/my-books.html/"
+    url: "books.html"
     icon: "fas fa-book"
   - title: "Contact"
-    url: "/#contact"
+    url: "#contact"
     icon: "fas fa-envelope"
 
 # Build settings

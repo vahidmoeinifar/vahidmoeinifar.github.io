@@ -5,11 +5,11 @@
         </a>
         
 <div class="nav-links">
-    {% for link in site.nav_links %}  <!-- ← Reads from _config.yml -->
-        <a href="{{ link.url | relative_url }}">
-            <i class="{{ link.icon }}"></i> {{ link.title }}
-        </a>
-    {% endfor %}
+   {% for link in site.nav_links %}
+<a href="{{ link.url | relative_url }}">
+    <i class="{{ link.icon }}"></i> {{ link.title }}
+</a>
+{% endfor %}
 </div>
         
         <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
