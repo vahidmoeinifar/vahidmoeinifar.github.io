@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- CRITICAL: Add proper viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>PhD | Vahid Moeinifar - Personal Website</title>
+    
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+    
+    <!-- Emergency mobile fix -->
+    <style>
+        /* Temporary debug border to see viewport */
+        body.debug * { border: 1px solid rgba(255,0,0,0.1); }
+    </style>
+    
+    
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="logo">
+            Vahid Moeinifar
+        </a>
+        
+<div class="nav-links">
+      <!-- ← Reads from _config.yml -->
+        <a href="/">
+            <i class="fas fa-home"></i> Home
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/#about">
+            <i class="fas fa-user"></i> About
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/#projects">
+            <i class="fas fa-code"></i> Projects
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/#cv">
+            <i class="fas fa-file-alt"></i> Resume
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/phd/">
+            <i class="fas fa-graduation-cap"></i> PhD Studies
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/my-books/">
+            <i class="fas fa-book"></i> My Books
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/#contact">
+            <i class="fas fa-envelope"></i> Contact
+        </a>
+    
+</div>
+        
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+    
+    <main>
+            <link rel="stylesheet" href="/books.css">
+
+<section class="section">
+    <div class="container">
+        <!-- Title -->
+        <h1 style="text-align: center; margin-bottom: 10px;">My PhD Research</h1>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 40px;">
+            AGH University of Science and Technology
+        </p>
+
+        <!-- Summary -->
+        <div style="max-width: 800px; margin: 0 auto 40px auto; background: var(--bg-secondary); padding: 25px; border-radius: 10px; border-left: 4px solid var(--accent-primary);">
+            <h3 style="color: var(--accent-primary); margin-bottom: 15px;">
+                <i class="fas fa-graduation-cap"></i> Summary
+            </h3>
+            <p style="color: var(--text-secondary); line-height: 1.6;">
+                PhD student in Computer Science with a research focus on Group Decision Support Systems based on Information Fusion and related AI methods.
+            </p>
+        </div>
+
+        <!-- Main Info -->
+        <div style="max-width: 800px; margin: 0 auto;">
+            <!-- Topic -->
+            <div style="margin-bottom: 30px;">
+                <h3 style="color: var(--accent-primary); margin-bottom: 10px;">
+                    <i class="fas fa-brain"></i> Research Topic
+                </h3>
+                <p style="color: var(--text-secondary);">
+                    Group decision support systems based on information fusion and related AI methods
+                </p>
+            </div>
+
+            <!-- Supervisor -->
+            <div style="margin-bottom: 30px;">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;">
+                    <i class="fas fa-user-tie"></i> Supervisor
+                </h3>
+                <p style="color: var(--text-secondary);">
+                    prof. dr hab. inż. Andrzej M. Skulimowski
+                </p>
+            </div>
+
+            <!-- Faculty -->
+            <div style="margin-bottom: 30px;">
+                <h3 style="color: var(--text-primary); margin-bottom: 10px;">
+                    <i class="fas fa-university"></i> Faculty
+                </h3>
+                <p style="color: var(--text-secondary);">
+                    Faculty of Electrical Engineering, Automatics, Computer Science and Biomedical Engineering
+                </p>
+            </div>
+
+            <!-- Education -->
+            <div style="margin-bottom: 40px;">
+                <h3 style="color: var(--text-primary); margin-bottom: 20px; border-bottom: 2px solid var(--border-color); padding-bottom: 10px;">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </h3>
+                
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; padding-bottom: 15px; border-bottom: 1px solid var(--border-color);">
+                        <div>
+                            <strong style="color: var(--text-primary);">PhD in Computer Science</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem;">AGH University, Krakow, Poland</span>
+                        </div>
+                        <span style="color: var(--accent-primary); font-weight: 500;">Current</span>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; padding-bottom: 15px; border-bottom: 1px solid var(--border-color);">
+                        <div>
+                            <strong style="color: var(--text-primary);">Master of Science in Computer Engineering</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem;">Ankara University, Ankara, Turkey</span>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
+                        <div>
+                            <strong style="color: var(--text-primary);">Bachelor in Computer Engineering</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem;">Shahid Bahonar University, Shiraz, Iran</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Publications -->
+            <div style="margin-bottom: 40px;">
+                <h3 style="color: var(--text-primary); margin-bottom: 20px; border-bottom: 2px solid var(--border-color); padding-bottom: 10px;">
+                    <i class="fas fa-file-alt"></i> Academic Publications
+                </h3>
+                
+                <div style="background: var(--bg-secondary); padding: 20px; border-radius: 10px;">
+                    <div style="margin-bottom: 15px;">
+                        <strong style="color: var(--text-primary); display: block; margin-bottom: 8px;">
+                            Zealots' Effect on Opinion Dynamics on Complex Networks
+                        </strong>
+                        <div style="display: flex; flex-wrap: wrap; gap: 15px; font-size: 0.9rem;">
+                            <span style="color: var(--text-muted);">doi.org/10.23939/mmc2021.02.203</span>
+                            <span style="color: var(--accent-primary); background: rgba(59, 130, 246, 0.1); padding: 2px 8px; border-radius: 4px;">[MMC]</span>
+                            <span style="color: var(--text-secondary);">2021</span>
+                        </div>
+                        <a href="https://doi.org/10.23939/mmc2021.02.203" target="_blank" style="
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 8px;
+                            color: var(--accent-primary);
+                            text-decoration: none;
+                            margin-top: 10px;
+                            font-size: 0.9rem;
+                        ">
+                            <i class="fas fa-external-link-alt"></i> View Publication
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scholarship -->
+            <div style="margin-bottom: 40px;">
+                <h3 style="color: var(--text-primary); margin-bottom: 20px; border-bottom: 2px solid var(--border-color); padding-bottom: 10px;">
+                    <i class="fas fa-award"></i> Scholarship & Grants
+                </h3>
+                
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <div style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: var(--bg-secondary); border-radius: 10px;">
+                        <i class="fas fa-university" style="color: var(--accent-primary); margin-top: 3px;"></i>
+                        <div>
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;">
+                                PhD Scholarship at AGH University
+                            </strong>
+                            <span style="color: var(--text-secondary); font-size: 0.95rem;">
+                                Granted PhD student at AGH University of Science and Technology
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; background: var(--bg-secondary); border-radius: 10px;">
+                        <i class="fas fa-globe" style="color: var(--accent-primary); margin-top: 3px;"></i>
+                        <div>
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 5px;">
+                                Turkish Higher Education Scholarship
+                            </strong>
+                            <span style="color: var(--text-secondary); font-size: 0.95rem;">
+                                YTB (Türkiye Bursları) scholarship for Master's studies in Turkey
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collaboration Invitation -->
+            <div style="background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary)); padding: 30px; border-radius: 10px; border: 1px solid var(--border-color); margin-bottom: 40px;">
+                <div style="text-align: center;">
+                    <i class="fas fa-handshake" style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 15px;"></i>
+                    <h3 style="color: var(--text-primary); margin-bottom: 15px;">Research Collaboration</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+                        I am open to collaborating on research papers. If you would like to publish a paper together, please feel free to contact me.
+                    </p>
+                    <h4> vmoeinifar[at]]agh.edu.pl</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="index.html" style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                color: var(--text-primary);
+                text-decoration: none;
+                padding: 10px 20px;
+                border: 1px solid var(--border-color);
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            " onmouseover="this.style.background='var(--bg-secondary)'; this.style.borderColor='var(--accent-primary)';" 
+               onmouseout="this.style.background='transparent'; this.style.borderColor='var(--border-color)';">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </div>
+</section>
+    </main>
+    
+      <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vahid Moeinifar. All rights reserved.</p>
+            <p>Built with <i class="fas fa-heart"></i> and hosted on GitHub Pages</p>
+            <div class="footer-links">
+                <div class="nav-links">
+      <!-- ← Reads from _config.yml -->
+        <a href="/">
+            <i class="fas fa-home"></i> Home
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/#about">
+            <i class="fas fa-user"></i> About
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/#projects">
+            <i class="fas fa-code"></i> Projects
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/#cv">
+            <i class="fas fa-file-alt"></i> Resume
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/phd/">
+            <i class="fas fa-graduation-cap"></i> PhD Studies
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/my-books/">
+            <i class="fas fa-book"></i> My Books
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/#contact">
+            <i class="fas fa-envelope"></i> Contact
+        </a>
+    
+</div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/script.js"></script>
+    
+    <!-- Emergency JavaScript to fix mobile -->
+    <script>
+    // Force mobile viewport fix
+    document.addEventListener('DOMContentLoaded', function() {
+        // Prevent horizontal scroll
+        document.body.style.overflowX = 'hidden';
+        
+        // Fix for iOS
+        if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+            document.body.style.webkitOverflowScrolling = 'touch';
+        }
+        
+        // Debug: Log viewport info
+        console.log('Viewport width:', window.innerWidth);
+        console.log('Document width:', document.documentElement.clientWidth);
+        console.log('Body width:', document.body.clientWidth);
+        
+        // Add debug class if URL has debug parameter
+        if (window.location.search.includes('debug')) {
+            document.body.classList.add('debug');
+        }
+    });
+    
+    // Prevent zoom on double tap (iOS)
+    document.addEventListener('touchstart', function(event) {
+        if (event.touches.length > 1) {
+            event.preventDefault();
+        }
+    }, { passive: false });
+    </script>
+</body>
+</html>
+
+

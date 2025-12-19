@@ -272,6 +272,3 @@ function debugWebsite() {
     console.log('Scroll position:', window.scrollY);
     console.log('=======================');
 }
-
-// Uncomment to enable debug mode
-// setInterval(debugWebsite, 5000);

@@ -1,0 +1,126 @@
+
+/* ===== SIMPLE PHD PAGE ===== */
+
+/* Simple Header */
+.simple-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
+
+.simple-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.simple-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* Simple Grid */
+.simple-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.info-box {
+    background: var(--bg-secondary);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+}
+
+.info-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-box h3 i {
+    color: var(--accent-primary);
+}
+
+.info-box p {
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Disciplines */
+.disciplines {
+    background: var(--bg-primary);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    margin-bottom: 40px;
+}
+
+.disciplines h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.discipline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.discipline-item {
+    color: var(--text-secondary);
+    line-height: 1.5;
+    padding-left: 10px;
+    border-left: 3px solid var(--accent-primary);
+}
+
+.discipline-item strong {
+    color: var(--text-primary);
+}
+
+/* Back Link */
+.back-link {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.back-link .btn {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 10px 25px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.back-link .btn:hover {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .simple-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .simple-header h1 {
+        font-size: 2rem;
+    }
+    
+    .disciplines {
+        padding: 20px;
+    }
+}

@@ -5,12 +5,13 @@
     <!-- CRITICAL: Add proper viewport meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <title>PhD Studies | Vahid Moeinifar - Personal Website</title>
+    <title>My Books | Vahid Moeinifar - Personal Website</title>
     
     <!-- CSS & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+
     
     <!-- Emergency mobile fix -->
     <style>
@@ -49,6 +50,10 @@
             <i class="fas fa-graduation-cap"></i> PhD Studies
         </a>
       <!-- ← Reads from _config.yml -->
+        <a href="/my-books/">
+            <i class="fas fa-book"></i> My Books
+        </a>
+      <!-- ← Reads from _config.yml -->
         <a href="/#contact">
             <i class="fas fa-envelope"></i> Contact
         </a>
@@ -66,55 +71,84 @@
 
     
     <main>
-        <section class="hero">
-    <div class="container">
-        <div class="hero-content centered">
-            <div class="hero-text">
-                <h1 class="name">PhD <span class="highlight">Studies</span></h1>
-                <h2 class="title">AGH University of Science and Technology</h2>
-                <p class="description">Research in Group Decision Support Systems with AI and Information Fusion</p>
-            </div>
-        </div>
-    </div>
-</section>
+        <link rel="stylesheet" href="/books.css">
 
 <section class="section">
     <div class="container">
-        <h2 class="section-title">Research <span class="highlight">Details</span></h2>
-        
-        <div class="phd-details">
-            <div class="detail-item">
-                <h3><i class="fas fa-university"></i> University</h3>
-                <p><strong>AGH University of Science and Technology</strong></p>
-                <p>Faculty of Electrical Engineering, Automatics, Computer Science and Biomedical Engineering</p>
-            </div>
+        <!-- Title -->
+        <h1 class="page-title">My Books</h1>
+        <p class="page-subtitle">Published works in Persian literature and linguistics</p>
+
+        <!-- Books Grid -->
+        <div class="books-grid">
             
-            <div class="detail-item">
-                <h3><i class="fas fa-user-tie"></i> Supervisor</h3>
-                <p><strong>prof. dr hab. inż. Andrzej M. Skulimowski</strong></p>
-                <p>Professor, Department of Applied Computer Science</p>
-            </div>
-            
-            <div class="detail-item">
-                <h3><i class="fas fa-book"></i> Disciplines</h3>
-                <div class="tags">
-                    <span class="tag">Automation</span>
-                    <span class="tag">Electronics</span>
-                    <span class="tag">Electrical Engineering</span>
-                    <span class="tag">Space Technologies</span>
-                    <span class="tag">ICT</span>
+            <!-- BAO -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="/assets/images/book1.jpg" alt="BAO Book Cover" class="book-image">
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">BAO</h3>
+                    <div class="book-type">Persian Novel</div>
+                    <div class="book-isbn">
+                        <i class="fas fa-barcode"></i>
+                        <span>978-622-6849-00-5</span>
+                    </div>
+                    <a href="https://ketabrah.com/book/41661-%DA%A9%D8%AA%D8%A7%D8%A8-%D8%A8%D8%A7%D8%A6%D9%88" target="_blank" class="book-link">
+                        <i class="fas fa-external-link-alt"></i> View on Ketabrah
+                    </a>
                 </div>
             </div>
             
-            <div class="detail-item">
-                <h3><i class="fas fa-search"></i> Research Topic</h3>
-                <p><strong>Group decision support systems based on information fusion and related AI methods</strong></p>
-                <p>Developing intelligent systems for collaborative decision-making using AI and data fusion techniques.</p>
+            <!-- Narration of My Life -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="/assets/images/book2.jpg" alt="Narration of My Life Book Cover" class="book-image">
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Narration of My Life</h3>
+                    <div class="book-type">Persian Novel</div>
+                    <div class="book-isbn">
+                        <i class="fas fa-barcode"></i>
+                        <span>978-622-6849-26-5</span>
+                    </div>
+                    <a href="https://ketabrah.com/book/52056-%DA%A9%D8%AA%D8%A7%D8%A8-%D8%B4%D8%B1%D8%AD-%D8%B2%D9%86%D8%AF%DA%AF%DB%8C-%D9%85%D9%86" target="_blank" class="book-link">
+                        <i class="fas fa-external-link-alt"></i> View on Ketabrah
+                    </a>
+                </div>
             </div>
+            
+            <!-- Qashqai Turkish Grammar -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="/assets/images/book3.jpg" alt="Qashqai Turkish Grammar Book Cover" class="book-image">
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Qashqai Turkish Grammar</h3>
+                    <div class="book-type">Linguistics</div>
+                    <div class="book-isbn">
+                        <i class="fas fa-barcode"></i>
+                        <span>978-622-6849-01-2</span>
+                    </div>
+                    <a href="https://ketabrah.com/book/41662-%DA%A9%D8%AA%D8%A7%D8%A8-%DA%AF%D8%B1%D8%A7%D9%85%D8%B1-%D8%B2%D8%A8%D8%A7%D9%86-%D8%AA%D8%B1%DA%A9%DB%8C-%D9%82%D8%B4%D9%82%D8%A7%DB%8C%DB%8C" target="_blank" class="book-link">
+                        <i class="fas fa-external-link-alt"></i> View on Ketabrah
+                    </a>
+                </div>
+            </div>
+            
         </div>
+
+   
+
+        <!-- Back Button -->
+        <div class="back-section">
+            <a href="/" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+
     </div>
 </section>
-
     </main>
     
       <footer class="footer">
@@ -142,6 +176,10 @@
       <!-- ← Reads from _config.yml -->
         <a href="/phd/">
             <i class="fas fa-graduation-cap"></i> PhD Studies
+        </a>
+      <!-- ← Reads from _config.yml -->
+        <a href="/my-books/">
+            <i class="fas fa-book"></i> My Books
         </a>
       <!-- ← Reads from _config.yml -->
         <a href="/#contact">
@@ -187,3 +225,5 @@
     </script>
 </body>
 </html>
+
+
